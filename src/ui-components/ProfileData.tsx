@@ -13,7 +13,7 @@ export type GraphData = {
   displayName: string;
   jobTitle: string;
   mail: string;
-  businessPhones: string[];
+  businessPhones: string;
   officeLocation: string;
 };
 
@@ -25,7 +25,7 @@ export const ProfileData: React.FC<{ graphData: GraphData }> = ({
       <NameListItem name={graphData.displayName} />
       <JobTitleListItem jobTitle={graphData.jobTitle} />
       <MailListItem mail={graphData.mail} />
-      <PhoneListItem phone={graphData.businessPhones[0]} />
+      <PhoneListItem phone={graphData.businessPhones} />
       <LocationListItem location={graphData.officeLocation} />
     </List>
   );

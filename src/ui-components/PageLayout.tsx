@@ -1,5 +1,6 @@
 import Typography from "@mui/material/Typography";
 import NavBar from "./NavBar";
+import { useIsAuthenticated } from "@azure/msal-react";
 
 type Props = {
   children?: React.ReactNode;
